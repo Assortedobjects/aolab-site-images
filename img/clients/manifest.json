@@ -1,0 +1,498 @@
+[
+ {
+  "name": "volkswagen",
+  "cat": "automotive-mobility",
+  "order": 0,
+  "w": 227,
+  "h": 228,
+  "kb": 15.8
+ },
+ {
+  "name": "bmw",
+  "cat": "automotive-mobility",
+  "order": 1,
+  "w": 235,
+  "h": 235,
+  "kb": 16.5
+ },
+ {
+  "name": "nio",
+  "cat": "automotive-mobility",
+  "order": 2,
+  "w": 497,
+  "h": 183,
+  "kb": 15.7
+ },
+ {
+  "name": "auto-wave",
+  "cat": "automotive-mobility",
+  "order": 3,
+  "w": 268,
+  "h": 151,
+  "kb": 6.6
+ },
+ {
+  "name": "ninebot",
+  "cat": "automotive-mobility",
+  "order": 4,
+  "w": 219,
+  "h": 277,
+  "kb": 16.3
+ },
+ {
+  "name": "icaur",
+  "cat": "automotive-mobility",
+  "order": 5,
+  "w": 413,
+  "h": 96,
+  "kb": 9.1
+ },
+ {
+  "name": "changan",
+  "cat": "automotive-mobility",
+  "order": 6,
+  "w": 567,
+  "h": 158,
+  "kb": 31.5
+ },
+ {
+  "name": "sundiro-honda",
+  "cat": "automotive-mobility",
+  "order": 7,
+  "w": 395,
+  "h": 155,
+  "kb": 27.3
+ },
+ {
+  "name": "brompton",
+  "cat": "automotive-mobility",
+  "order": 8,
+  "w": 404,
+  "h": 115,
+  "kb": 14.2
+ },
+ {
+  "name": "apple",
+  "cat": "consumer-electronics",
+  "order": 0,
+  "w": 196,
+  "h": 242,
+  "kb": 6.4
+ },
+ {
+  "name": "lenovo",
+  "cat": "consumer-electronics",
+  "order": 1,
+  "w": 401,
+  "h": 142,
+  "kb": 11.1
+ },
+ {
+  "name": "sony",
+  "cat": "consumer-electronics",
+  "order": 2,
+  "w": 422,
+  "h": 100,
+  "kb": 12.3
+ },
+ {
+  "name": "oppo",
+  "cat": "consumer-electronics",
+  "order": 3,
+  "w": 383,
+  "h": 94,
+  "kb": 11.7
+ },
+ {
+  "name": "mobifitness",
+  "cat": "consumer-electronics",
+  "order": 4,
+  "w": 529,
+  "h": 97,
+  "kb": 18.9
+ },
+ {
+  "name": "samsung",
+  "cat": "consumer-electronics",
+  "order": 5,
+  "w": 508,
+  "h": 89,
+  "kb": 15.4
+ },
+ {
+  "name": "electrolux",
+  "cat": "consumer-electronics",
+  "order": 6,
+  "w": 590,
+  "h": 142,
+  "kb": 21.4
+ },
+ {
+  "name": "aeg",
+  "cat": "consumer-electronics",
+  "order": 7,
+  "w": 280,
+  "h": 124,
+  "kb": 8.5
+ },
+ {
+  "name": "siemens",
+  "cat": "consumer-electronics",
+  "order": 8,
+  "w": 548,
+  "h": 108,
+  "kb": 16.2
+ },
+ {
+  "name": "starbucks",
+  "cat": "food-beverage",
+  "order": 0,
+  "w": 259,
+  "h": 276,
+  "kb": 30.2
+ },
+ {
+  "name": "peets",
+  "cat": "food-beverage",
+  "order": 1,
+  "w": 281,
+  "h": 288,
+  "kb": 22.3
+ },
+ {
+  "name": "cornetto",
+  "cat": "food-beverage",
+  "order": 2,
+  "w": 384,
+  "h": 252,
+  "kb": 23.8
+ },
+ {
+  "name": "ferrero",
+  "cat": "food-beverage",
+  "order": 3,
+  "w": 667,
+  "h": 101,
+  "kb": 19.7
+ },
+ {
+  "name": "budweiser",
+  "cat": "food-beverage",
+  "order": 4,
+  "w": 384,
+  "h": 124,
+  "kb": 14.7
+ },
+ {
+  "name": "suntory",
+  "cat": "food-beverage",
+  "order": 5,
+  "w": 496,
+  "h": 96,
+  "kb": 13.2
+ },
+ {
+  "name": "jim-beam",
+  "cat": "food-beverage",
+  "order": 6,
+  "w": 368,
+  "h": 161,
+  "kb": 14.5
+ },
+ {
+  "name": "nestle",
+  "cat": "food-beverage",
+  "order": 7,
+  "w": 378,
+  "h": 120,
+  "kb": 14.7
+ },
+ {
+  "name": "mars",
+  "cat": "food-beverage",
+  "order": 8,
+  "w": 347,
+  "h": 115,
+  "kb": 11.2
+ },
+ {
+  "name": "unilever",
+  "cat": "beauty-personal-care",
+  "order": 0,
+  "w": 232,
+  "h": 257,
+  "kb": 33.3
+ },
+ {
+  "name": "loreal",
+  "cat": "beauty-personal-care",
+  "order": 1,
+  "w": 522,
+  "h": 159,
+  "kb": 20.3
+ },
+ {
+  "name": "sephora",
+  "cat": "beauty-personal-care",
+  "order": 2,
+  "w": 592,
+  "h": 95,
+  "kb": 15.7
+ },
+ {
+  "name": "lux",
+  "cat": "beauty-personal-care",
+  "order": 3,
+  "w": 331,
+  "h": 128,
+  "kb": 10.2
+ },
+ {
+  "name": "pg",
+  "cat": "beauty-personal-care",
+  "order": 4,
+  "w": 314,
+  "h": 148,
+  "kb": 12.0
+ },
+ {
+  "name": "clear",
+  "cat": "beauty-personal-care",
+  "order": 5,
+  "w": 341,
+  "h": 212,
+  "kb": 20.3
+ },
+ {
+  "name": "dove",
+  "cat": "beauty-personal-care",
+  "order": 6,
+  "w": 356,
+  "h": 211,
+  "kb": 17.5
+ },
+ {
+  "name": "nike",
+  "cat": "fashion-sports",
+  "order": 0,
+  "w": 350,
+  "h": 197,
+  "kb": 13.7
+ },
+ {
+  "name": "new-balance",
+  "cat": "fashion-sports",
+  "order": 1,
+  "w": 300,
+  "h": 188,
+  "kb": 16.6
+ },
+ {
+  "name": "the-north-face",
+  "cat": "fashion-sports",
+  "order": 2,
+  "w": 375,
+  "h": 184,
+  "kb": 21.0
+ },
+ {
+  "name": "on",
+  "cat": "fashion-sports",
+  "order": 3,
+  "w": 127,
+  "h": 220,
+  "kb": 7.0
+ },
+ {
+  "name": "maia-active",
+  "cat": "fashion-sports",
+  "order": 4,
+  "w": 637,
+  "h": 65,
+  "kb": 12.7
+ },
+ {
+  "name": "anta",
+  "cat": "fashion-sports",
+  "order": 5,
+  "w": 325,
+  "h": 178,
+  "kb": 13.0
+ },
+ {
+  "name": "teenie-weenie",
+  "cat": "fashion-sports",
+  "order": 6,
+  "w": 322,
+  "h": 179,
+  "kb": 25.9
+ },
+ {
+  "name": "staccato",
+  "cat": "fashion-sports",
+  "order": 7,
+  "w": 403,
+  "h": 116,
+  "kb": 15.0
+ },
+ {
+  "name": "icicle",
+  "cat": "fashion-sports",
+  "order": 8,
+  "w": 471,
+  "h": 108,
+  "kb": 10.8
+ },
+ {
+  "name": "hay",
+  "cat": "home",
+  "order": 0,
+  "w": 312,
+  "h": 140,
+  "kb": 9.3
+ },
+ {
+  "name": "allsteel",
+  "cat": "home",
+  "order": 1,
+  "w": 501,
+  "h": 129,
+  "kb": 18.0
+ },
+ {
+  "name": "kohler",
+  "cat": "home",
+  "order": 2,
+  "w": 446,
+  "h": 115,
+  "kb": 14.0
+ },
+ {
+  "name": "roca",
+  "cat": "home",
+  "order": 3,
+  "w": 364,
+  "h": 157,
+  "kb": 13.0
+ },
+ {
+  "name": "ecowin",
+  "cat": "home",
+  "order": 4,
+  "w": 448,
+  "h": 104,
+  "kb": 14.3
+ },
+ {
+  "name": "scavolini",
+  "cat": "home",
+  "order": 5,
+  "w": 401,
+  "h": 144,
+  "kb": 16.2
+ },
+ {
+  "name": "kartell",
+  "cat": "home",
+  "order": 6,
+  "w": 379,
+  "h": 124,
+  "kb": 13.3
+ },
+ {
+  "name": "fotile",
+  "cat": "home",
+  "order": 7,
+  "w": 438,
+  "h": 119,
+  "kb": 11.7
+ },
+ {
+  "name": "cartier",
+  "cat": "jewellery-accessories",
+  "order": 0,
+  "w": 441,
+  "h": 148,
+  "kb": 18.1
+ },
+ {
+  "name": "zippo",
+  "cat": "jewellery-accessories",
+  "order": 1,
+  "w": 361,
+  "h": 111,
+  "kb": 10.9
+ },
+ {
+  "name": "breitling",
+  "cat": "jewellery-accessories",
+  "order": 2,
+  "w": 552,
+  "h": 232,
+  "kb": 22.9
+ },
+ {
+  "name": "4mytu",
+  "cat": "jewellery-accessories",
+  "order": 3,
+  "w": 440,
+  "h": 112,
+  "kb": 12.3
+ },
+ {
+  "name": "zhuanzhuan",
+  "cat": "retail-ecommerce",
+  "order": 0,
+  "w": 459,
+  "h": 155,
+  "kb": 26.5
+ },
+ {
+  "name": "jd",
+  "cat": "retail-ecommerce",
+  "order": 1,
+  "w": 266,
+  "h": 177,
+  "kb": 17.3
+ },
+ {
+  "name": "alibaba",
+  "cat": "retail-ecommerce",
+  "order": 2,
+  "w": 554,
+  "h": 148,
+  "kb": 27.4
+ },
+ {
+  "name": "disney",
+  "cat": "culture-entertainment-education",
+  "order": 0,
+  "w": 432,
+  "h": 186,
+  "kb": 19.4
+ },
+ {
+  "name": "stars-collective",
+  "cat": "culture-entertainment-education",
+  "order": 1,
+  "w": 275,
+  "h": 252,
+  "kb": 31.9
+ },
+ {
+  "name": "aranya",
+  "cat": "culture-entertainment-education",
+  "order": 2,
+  "w": 433,
+  "h": 136,
+  "kb": 14.8
+ },
+ {
+  "name": "meet-art-gallery",
+  "cat": "culture-entertainment-education",
+  "order": 3,
+  "w": 675,
+  "h": 117,
+  "kb": 24.1
+ }
+]
