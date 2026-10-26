@@ -35,6 +35,7 @@ function processSubtree(rootId, ctx, compMap, variantMap){
         }
         if (Object.keys(patch).length) { tree.patch(n.id, patch); if (patch.component) log.swap++; }
       }
+      if (variantMap) { const ip={}; for (const k of ["onTap","onClick","onMouseEnter","onMouseLeave","onAppear","onTapStart","onMouseDown","onMouseUp","triggerActions"]) { const v=n[k]; if (!v) continue; let js=JSON.stringify(v); let ch=false; js = js.replace(/"variant":"([A-Za-z0-9_-]+)"/g, (m,id)=>{ if (variantMap[id]) { ch=true; return '"variant":"'+variantMap[id]+'"'; } return m; }); if (ch) ip[k]=JSON.parse(js); } if (Object.keys(ip).length) { tree.patch(n.id, ip); log.ia=(log.ia||0)+1; } }
     } catch(e) { log.err.push(n.id+":"+String(e.message||e).slice(0,120)); }
   }
 }
