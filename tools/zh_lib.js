@@ -39,4 +39,34 @@ function processSubtree(rootId, ctx, compMap, variantMap){
     } catch(e) { log.err.push(n.id+":"+String(e.message||e).slice(0,120)); }
   }
 }
-return { D, CTX, FIELD, PATHS, tr, mapHref, mapLink, hasWork, processSubtree, log };
+
+function grounds(scope){ return (tree.get(scope).children||[]).map(c=>c.id); }
+async function swapInstance(id, compMap, variantMap){
+  const P = tree.get(id); if (!P || P.$originalId) return "skip";
+  const newComp = compMap[P.component]; if (!newComp) return "skip";
+  const parent = tree.getParentNodeFor(id); if (!parent) return "noparent";
+  const idx = (parent.children||[]).findIndex(c=>c.id===id);
+  const s = await tree.serialize(id, {depth:0});
+  const attrs = {};
+  for (const [k,v] of Object.entries(s)) { if (k==="id"||k==="type"||k==="children"||k==="component"||k==="__class"||(k.startsWith("$")&&!k.startsWith("$control__"))) continue; attrs[k]=v; }
+  if (attrs.$control__variant && variantMap[attrs.$control__variant]) attrs.$control__variant = variantMap[attrs.$control__variant];
+  const N = tree.insert("ComponentInstanceNode", "zs"+id, {...attrs, component:newComp, parent: parent.id, index: idx});
+  const scope = tree.getScopeNodeFor(id);
+  const reps = [];
+  if (scope) for (const g of grounds(scope.id)) { const rid = g+id; const RP = tree.get(rid); if (!RP) continue; reps.push([g, rid]); }
+  for (const [g, rid] of reps) {
+    const rs = await tree.serialize(rid, {depth:0}); const rpatch = {};
+    for (const [k,v] of Object.entries(rs)) { if (k==="id"||k==="type"||k==="children"||k==="component"||k==="__class"||(k.startsWith("$")&&!k.startsWith("$control__"))) continue; if (JSON.stringify(v)!==JSON.stringify(s[k])) rpatch[k] = (k==="$control__variant" && variantMap[v]) ? variantMap[v] : v; }
+    const rn = g+N.id; if (!tree.get(rn)) continue;
+    if (Object.keys(rpatch).length) { try { tree.patch(rn, rpatch); } catch(e) { log.err.push("rpatch "+rn+": "+String(e.message).slice(0,80)); } }
+    const rparent = tree.getParentNodeFor(rid); if (rparent) { const ridx = (rparent.children||[]).findIndex(c=>c.id===rid); try { tree.move(rn, rparent.id, ridx); } catch(e) { log.err.push("move "+rn+": "+String(e.message).slice(0,80)); } }
+  }
+  tree.remove(id); log.swap++;
+  return N.id;
+}
+async function swapAll(root, compMap, variantMap, max=1e9){
+  const list = []; for (const n of tree.walk(root)) if (n.type==="ComponentInstanceNode" && !n.$originalId && compMap[n.component]) list.push(n.id);
+  let done=0; for (const id of list) { if (done>=max) break; try { await swapInstance(id, compMap, variantMap); } catch(e) { log.err.push("swap "+id+": "+String(e.message||e).slice(0,120)); } done++; }
+  return list.length - done;
+}
+return { D, CTX, FIELD, PATHS, tr, mapHref, mapLink, hasWork, processSubtree, swapInstance, swapAll, log };
